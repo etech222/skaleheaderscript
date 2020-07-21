@@ -1,0 +1,1279 @@
+ 
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
+body {
+  font-family: rubik, Helvetica Neue, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.main-header {
+  height: 73px;
+}
+
+.main-header .logo {
+  width: 258px;
+  height: 34px;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .main-header .logo {
+    width: auto;
+  }
+}
+
+.main-header .logo img {
+  width: 79px;
+  height: 34px;
+  margin-left: 27px !important;
+}
+
+.main-header > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.main-header > ul > li:nth-child(2) {
+  padding-top: 0 !important;
+  padding-left: 36px !important;
+}
+
+.main-header > ul .profile-data-name {
+  margin-bottom: 0 !important;
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.main-header > ul .pull-right.last {
+  margin-right: 47px;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.main-header > ul .pull-right.last a {
+  padding: 0;
+  color: #50afef !important;
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.main-header > ul .pull-right.last a .fa {
+  display: none;
+}
+
+.main-header > ul .xn-icon-button.pull-right {
+  margin-left: auto;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.main-header > ul .xn-icon-button.pull-right > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.main-header > ul .xn-icon-button.pull-right > a .flag {
+  height: 24px;
+  margin: 0;
+  padding: 0 0 0 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-header > ul .xn-icon-button.pull-right .xn-drop-white {
+  background-color: #fff;
+}
+
+.page-sidebar {
+  width: 258px !important;
+}
+
+.page-sidebar .x-navigation li::before {
+  right: 29px;
+  text-align: center;
+}
+
+.page-sidebar .x-navigation .xn-text,
+.page-sidebar .x-navigation a {
+  font-family: Rubik, Open Sans;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.page-sidebar .x-navigation li a > .fa,
+.page-sidebar .x-navigation li a > .glyphicon {
+  font-size: 10px;
+  width: 62px;
+}
+
+.page-sidebar .x-navigation ul li {
+  margin: 0;
+}
+
+.page-sidebar .x-navigation ul li a {
+  padding-left: 78px !important;
+}
+
+.panel-controls .refreshWidgets,
+.panel-controls .refresh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: #1c1c26;
+  color: #50afef;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.panel-controls .refresh {
+  margin-bottom: 30px;
+}
+
+.page-content {
+  height: auto !important;
+  min-height: calc(100vh - 73px) !important;
+  margin-left: 258px !important;
+}
+
+.page-content .balance-color .widget-buttons.widget-c4 > div {
+  width: 100% !important;
+}
+
+.page-content .balance-color .widget-buttons.widget-c4 > div > div {
+  padding: 0;
+}
+
+.page-content #widgets {
+  margin-top: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  .page-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page-container .page-content {
+    margin-left: 0 !important;
+  }
+}
+
+.x-navigation,
+.x-navigation.x-navigation-horizontal,
+.page-container {
+  background-color: #1d1d26 !important;
+  background: #1d1d26 !important;
+}
+
+.x-navigation li ul {
+  display: none;
+  background-color: transparent;
+}
+
+.x-navigation li.active ul {
+  display: block;
+}
+
+.x-navigation li {
+  color: #afb9c5;
+}
+
+.x-navigation li.active > a {
+  background-color: transparent;
+  border-left: 4px solid #50afef;
+  color: #afb9c5;
+}
+
+.x-navigation li.active > a,
+.x-navigation li > a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.x-navigation li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.x-navigation li a {
+  min-height: 24px;
+  padding: 0 5px 0 0;
+  border-bottom: none;
+}
+
+.x-navigation > li.xn-openable:before {
+  top: 0px;
+}
+
+.x-navigation li.active > a .fa,
+.x-navigation li.active > a .glyphicon,
+.x-navigation li:hover > a .fa,
+.x-navigation li:hover > a .glyphicon {
+  color: #fff;
+}
+
+.x-navigation.x-navigation-horizontal > li > a:hover {
+  background-color: transparent;
+}
+
+.x-navigation,
+.x-navigation.x-navigation-horizontal li {
+  margin: 0;
+}
+
+.xn-drop-left li {
+  margin: 0 !important;
+}
+
+.profile-data h2 {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+select,
+input {
+  padding: 0 0 9px 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #afb9c5 !important;
+  border-radius: 0 !important;
+  font-family: Rubik, Open Sans !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  color: #afb9c5 !important;
+}
+
+input[type="reset"] {
+  padding: 12px 32px !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+  font-family: Rubik, Open sans !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  color: #50afef !important;
+}
+
+input[type="reset"]:hover {
+  background-color: transparent !important;
+  color: #50afef !important;
+}
+
+.widget,
+.tile {
+  padding: 11px 16px !important;
+  background: #1d1d26 !important;
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+}
+
+.widget .widget-title {
+  margin-bottom: 6px;
+  font-family: Rubik, Open Sans;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  color: #afb9c5;
+}
+
+.widget .widget-int {
+  font-family: Rubik, Open Sans;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.widget .widget-subtitle {
+  margin-top: 17px;
+  font-family: Rubik, Open Sans;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  color: #50afef;
+}
+
+.widget .widget-subtitle .progress.progress-small {
+  margin: 0 !important;
+  background-color: #252531;
+}
+
+.panel {
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.panel .panel-heading {
+  padding: 0;
+}
+
+.panel .panel-heading .panel-title {
+  margin-left: 0 !important;
+  margin-bottom: 16px !important;
+  font-family: Rubik, Open Sans;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.panel .panel-heading .panel-title strong {
+  font-weight: normal !important;
+}
+
+.panel .widget-int {
+  font-family: Rubik, Open Sans;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.panel .widget-subtitle {
+  margin-top: 17px;
+  font-family: Rubik, Open Sans;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  color: #50afef;
+}
+
+.panel .panel-body {
+  padding: 11px 16px !important;
+  background: #1d1d26 !important;
+  border: 1px solid transparent !important;
+  border-radius: 6px !important;
+  color: #fff !important;
+}
+
+.panel .panel-body h2 {
+  font-family: Rubik, Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.panel .panel-body div,
+.panel .panel-body strong {
+  font-family: Rubik, Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.panel .panel-body strong {
+  font-weight: bolder;
+}
+
+.panel .panel-body-table {
+  padding: 0 !important;
+}
+
+.metatrader-color {
+  margin-top: 35px;
+}
+
+.metatrader-color p {
+  position: relative;
+  top: -48px;
+  left: -16px;
+  width: 100%;
+  height: 0;
+  margin-left: 0 !important;
+  text-align: left;
+  font-weight: normal !important;
+  font-family: Rubik, Open Sans;
+  font-size: 16px !important;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.owl-carousel .owl-controls {
+  margin-top: 21px;
+}
+
+.owl-carousel .owl-controls .owl-pagination {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+}
+
+.owl-carousel .owl-controls .owl-pagination .owl-page.active span {
+  background-color: #50afef !important;
+}
+
+.owl-carousel .owl-controls .owl-pagination .owl-page span {
+  margin: 5px 14px 5px 0;
+  background: #252531 !important;
+  opacity: 1 !important;
+}
+
+.panel-heading {
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+.panel-footer {
+  background: transparent !important;
+  border-top: none !important;
+}
+
+.panel-footer .btn.btn-default {
+  padding: 12px 32px;
+  background-color: transparent !important;
+  border: none;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 18px !important;
+  white-space: normal !important;
+  color: #50afef !important;
+}
+
+.panel-title {
+  color: #fff !important;
+}
+
+.panel .panel-title {
+  font-size: 14px;
+  line-height: 1.364;
+  color: #fff;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+}
+
+.ib-login-btn {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.364;
+  white-space: normal;
+  margin-top: 5px;
+  padding: 10px 25px !important;
+  background-color: #50afef;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+.ib-login-btn:hover {
+  background: #3d4e5d !important;
+}
+
+.btn-deposit {
+  background-color: #50afef !important;
+  width: 100%;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
+  padding: 10px 25px;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.364 !important;
+  white-space: normal !important;
+  border-radius: 5px !important;
+}
+
+.btn.btn-danger.btn-rounded.btn-condensed.btn-sm {
+  padding: 5px 10px;
+  background: #50afef;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  font-family: Rubik, Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.btn.btn-primary.pull-right.submit {
+  background-color: #50afef !important;
+}
+
+.btn.btn-primary.btn-lg {
+  padding: 12px 32px;
+  background-color: #50afef !important;
+  border-radius: 5px !important;
+  border: none;
+}
+
+.btn.btn-primary.pull-right.submit {
+  float: left !important;
+  padding: 12px 32px;
+  border: none !important;
+  background-color: #50afef !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 18px !important;
+  white-space: normal !important;
+  border-radius: 5px !important;
+}
+
+.btn.btn-primary.btn-file {
+  padding: 8px 14px;
+  border: 1px solid #50afef !important;
+  border-radius: 5px;
+  background-color: transparent !important;
+  color: #50afef !important;
+}
+
+.btn.btn-primary.btn-file .glyphicon {
+  display: none;
+}
+
+.table thead > tr > th {
+  padding: 16px !important;
+  border: none;
+  background-color: transparent;
+  font-family: Rubik, Open Sans;
+  letter-spacing: 0.07em !important;
+  text-transform: uppercase;
+  color: #afb9c5;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 10px !important;
+  line-height: 14px !important;
+}
+
+.table tbody > tr > td {
+  padding: 16px !important;
+  border: none !important;
+  color: #fff;
+  font-family: Rubik, Open Sans;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  letter-spacing: 0.01em;
+}
+
+.table.table-bordered {
+  border: none !important;
+}
+
+.table.table-bordered tbody > tr > td {
+  border-top: 1px solid #18181f !important;
+}
+
+.dataTables_length,
+.dataTables_filter {
+  border: none !important;
+}
+
+.paginate_button {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+  color: #afb9c5 !important;
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 20px !important;
+}
+
+.paginate_button.next::before {
+  content: "\f105";
+}
+
+.paginate_button.previous::before {
+  content: "\f104";
+}
+
+.paginate_button.previous::before, .paginate_button.next::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-indent: 0;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-size: 24px;
+  color: #afb9c5 !important;
+  text-align: center;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background: transparent !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: transparent !important;
+}
+
+.page-container .page-content,
+.page-container .page-content .row {
+  background-color: transparent !important;
+}
+
+.page-content-wrap {
+  min-height: calc(100vh - 73px) !important;
+  background-color: #18181f;
+  padding: 30px;
+  height: 100%;
+}
+
+.row [class^="col-xs-"],
+.row [class^="col-sm-"],
+.row [class^="col-md-"],
+.row [class^="col-lg-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.input-group .input-group-addon {
+  display: none;
+}
+
+#client-fields .panel {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#client-fields label {
+  display: none;
+}
+
+#client-fields .panel-body {
+  background: transparent !important;
+}
+
+#client-fields .form-group {
+  margin-left: -15px;
+}
+
+#client-fields .panel-body {
+  margin-left: -16px;
+}
+
+#client-fields button {
+  margin-top: 17px;
+  float: left !important;
+  padding: 12px 32px;
+  font-family: Rubik, Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+#client-fields img[src="https://portal.aagmarkets.com/img/cc_3.png?v=c9ff344eb160dcd66460429f96327acc"] {
+  display: none;
+}
+
+#instance-fields-657,
+#instance-fields-682 {
+  padding: 20px;
+  background: #1c1c26;
+  border-radius: 6px;
+  font-family: Rubik, Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #afb9c5;
+}
+
+#instance-fields-657 p.align_center.bold,
+#instance-fields-682 p.align_center.bold {
+  font-family: Rubik, Open Sans;
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+#instance-fields-657 img,
+#instance-fields-682 img {
+  width: 100%;
+  max-height: 200px;
+  margin: 20px 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#instance-fields-657 a,
+#instance-fields-682 a {
+  text-align: center;
+  font-family: Rubik, Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px !important;
+  line-height: 19px;
+  color: #50afef;
+}
+
+.panel-refresh-layer {
+  background: transparent !important;
+}
+
+.x-navigation.x-navigation-horizontal.header-background {
+  background-color: #18181f !important;
+  height: 70px;
+  padding: 0 25% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.x-navigation.x-navigation-horizontal.header-background + hr {
+  display: none;
+}
+
+.login-container,
+.registration-container {
+  background-repeat: no-repeat !important;
+  background-position: 0 130px !important;
+  background-size: 100% !important;
+  background-color: #18181f !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 544'%3E%3Cg transform='translate(0.000000, -127.000000)' fill='%2322222c' fill-rule='nonzero'%3E%3Cpath d='M0,406.820285 L0,403.820285 C16.6986382,403.820285 29.812888,414.836513 41.0358319,436.164055 C49.8101912,452.838425 56.5512722,472.854005 66.9090452,509.882011 C67.1391623,510.704657 72.7371517,530.852395 74.4049961,536.752084 C86.6018246,579.896095 96.0317264,605.889115 108.779924,627.025333 C124.858932,653.683958 144.42057,667.5 169.649369,667.5 C197.921552,667.5 219.73583,654.642456 237.353356,629.984515 C251.43953,610.269147 261.90736,585.316383 274.120167,546.490795 C276.468982,539.023703 284.334301,513.171332 284.290809,513.312661 C291.267253,490.642323 296.239433,476.3862 301.905693,463.899209 C308.949107,448.377325 316.456299,437.481944 325.268842,430.846479 C344.500997,416.365495 362.763903,415.217715 384.898771,424.188605 C392.873401,427.420588 396.634086,429.396502 414.578702,439.331971 C428.400775,446.984895 436.634749,451.053838 445.918388,454.378423 C457.841981,458.648408 469.089674,460.464452 480.555815,459.564303 C492.9342,458.592537 503.110763,454.391094 512.391067,447.004923 C519.702111,441.186082 525.470829,434.59148 535.069927,421.942904 C535.587289,421.261184 538.498807,417.412273 539.341663,416.303548 C550.916854,401.077096 558.474785,392.825865 568.703467,385.684675 C581.939935,376.443587 597.37539,371.643344 616.703012,371.643344 C635.14197,371.643344 650.463228,377.491862 664.501579,388.821904 C675.159119,397.423369 682.810947,406.418489 697.842875,426.484375 C698.074205,426.793174 698.94504,427.955897 699.146,428.224163 C714.431813,448.629546 722.218626,457.754584 733.081755,466.438149 C747.259397,477.771208 762.774497,483.603609 781.619318,483.603609 C800.459222,483.60361 816.037311,477.77659 830.410672,466.432381 C841.364033,457.787414 848.950707,449.09935 865.139401,428.204817 C881.479978,407.11425 889.169397,398.308523 900.381048,389.459699 C915.265504,377.712103 931.489859,371.643344 951.031083,371.643344 C969.029859,371.643344 984.097933,376.792684 998.042244,386.761946 C1008.55766,394.279773 1015.86985,401.813906 1031.25555,419.647758 L1031.44845,419.871344 C1049.21659,440.466695 1057.76006,448.893013 1070.45625,456.358679 C1087.12391,466.159664 1105.98973,469.152887 1129.69253,464.424506 C1150.77393,460.219058 1166.72369,441.070758 1179.35988,407.633272 C1189.31157,381.299426 1196.19502,350.806164 1205.53542,297.641957 C1206.09608,294.450731 1206.66812,291.172975 1207.41241,286.892095 C1207.47723,286.519258 1208.86962,278.504159 1209.27457,276.178091 C1218.61631,222.518597 1224.1717,196.638072 1232.57525,173.436603 C1243.5393,143.165801 1257.4223,127.5 1276.40954,127.5 C1296.11778,127.5 1312.19309,137.763786 1326.60845,157.515199 C1337.4506,172.37074 1344.92832,187.483207 1360.14223,222.48035 L1360.70402,223.7727 C1375.66095,258.178708 1382.96574,272.967288 1393.41832,287.358924 C1407.02457,306.092701 1421.89199,315.656733 1440,315.656731 L1440,318.656731 C1420.80058,318.656733 1405.11205,308.564495 1390.99098,289.121886 C1380.36175,274.48702 1373.00224,259.587658 1357.95275,224.968731 L1357.39095,223.67638 C1342.27038,188.893947 1334.84841,173.894128 1324.1852,159.283779 C1310.28562,140.239062 1295.03214,130.5 1276.40954,130.5 C1259.04427,130.5 1245.9767,145.245663 1235.39593,174.458251 C1227.07455,197.432864 1221.53984,223.217032 1212.23011,276.692631 C1211.82527,279.018062 1210.43297,287.032669 1210.36807,287.405977 C1209.6235,291.688453 1209.05119,294.967806 1208.49016,298.161074 C1199.11776,351.507413 1192.20565,382.12764 1182.16618,408.693786 C1169.20194,442.999344 1152.6167,462.910561 1130.27942,467.366539 C1105.8644,472.236998 1086.24767,469.124636 1068.9356,458.94472 C1055.8593,451.255543 1047.16038,442.67591 1029.17695,421.831018 L1028.98406,421.607432 C1013.75513,403.955294 1006.55252,396.534075 996.297481,389.202398 C982.847016,379.586202 968.383152,374.643344 951.031083,374.643344 C932.191149,374.643344 916.613039,380.470373 902.23966,391.8146 C891.286288,400.459577 883.699625,409.147631 867.510897,430.042208 C851.170354,451.132731 843.480925,459.938468 832.269283,468.787283 C817.384845,480.534861 801.160512,486.60361 781.619318,486.603609 C762.068555,486.603609 745.900771,480.525853 731.208583,468.781486 C720.080766,459.886339 712.182451,450.630638 696.744971,430.02279 C696.543896,429.75437 695.673077,428.591669 695.441871,428.283036 C680.55927,408.416483 673.01573,399.548662 662.617436,391.156428 C649.093514,380.241571 634.42794,374.643344 616.703012,374.643344 C597.986284,374.643344 583.150819,379.256997 570.420805,388.144502 C560.516581,395.059171 553.12849,403.124982 541.729916,418.119105 C540.889737,419.224309 537.979233,423.07188 537.459671,423.756498 C527.716798,436.594524 521.822549,443.332629 514.259274,449.35222 C504.523384,457.10099 493.783232,461.535114 480.790608,462.5551 C468.870973,463.490852 457.207082,461.607609 444.906951,457.20278 C435.429027,453.808619 427.081114,449.683371 413.125548,441.956536 C395.31175,432.093499 391.585213,430.135526 383.771947,426.968941 C362.552322,418.368984 345.395576,419.447244 327.073374,433.243073 C318.73483,439.521637 311.492201,450.033053 304.637587,465.138869 C299.038315,477.478233 294.099271,491.639352 287.158112,514.195029 C287.205288,514.041727 279.335768,539.907911 276.981927,547.390978 C264.680238,586.499131 254.114105,611.686224 239.794336,631.728539 C221.646224,657.129099 198.96098,670.5 169.649369,670.5 C143.236279,670.5 122.78666,656.056792 106.211016,628.574756 C93.2827696,607.140022 83.7849779,580.959866 71.5181371,537.568201 C69.8481044,531.660771 64.2484622,511.507083 64.0199492,510.690172 C53.7195902,473.867416 47.0230478,453.984079 38.3809706,437.561092 C27.6223098,417.115851 15.3659709,406.820285 0,406.820285 Z' transform='translate(720.000000, 399.000000) scale(-1, -1) translate(-720.000000, -399.000000)'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+
+.login-container .login-box,
+.login-container .registration-box,
+.registration-container .login-box,
+.registration-container .registration-box {
+  max-width: 600px;
+  width: 600px;
+  min-height: 335px;
+}
+
+@media screen and (max-width: 600px) {
+  .login-container .login-box,
+  .login-container .registration-box,
+  .registration-container .login-box,
+  .registration-container .registration-box {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.login-container .login-box .login-body,
+.login-container .login-box .registration-body,
+.login-container .registration-box .login-body,
+.login-container .registration-box .registration-body,
+.registration-container .login-box .login-body,
+.registration-container .login-box .registration-body,
+.registration-container .registration-box .login-body,
+.registration-container .registration-box .registration-body {
+  background-color: #1d1d26 !important;
+  padding: 40px 20px !important;
+  border-radius: 8px;
+}
+
+.login-container .login-box .login-body .btn.btn-default.pull-right,
+.login-container .login-box .login-body .btn.btn-default.pull-left,
+.login-container .login-box .registration-body .btn.btn-default.pull-right,
+.login-container .login-box .registration-body .btn.btn-default.pull-left,
+.login-container .registration-box .login-body .btn.btn-default.pull-right,
+.login-container .registration-box .login-body .btn.btn-default.pull-left,
+.login-container .registration-box .registration-body .btn.btn-default.pull-right,
+.login-container .registration-box .registration-body .btn.btn-default.pull-left,
+.registration-container .login-box .login-body .btn.btn-default.pull-right,
+.registration-container .login-box .login-body .btn.btn-default.pull-left,
+.registration-container .login-box .registration-body .btn.btn-default.pull-right,
+.registration-container .login-box .registration-body .btn.btn-default.pull-left,
+.registration-container .registration-box .login-body .btn.btn-default.pull-right,
+.registration-container .registration-box .login-body .btn.btn-default.pull-left,
+.registration-container .registration-box .registration-body .btn.btn-default.pull-right,
+.registration-container .registration-box .registration-body .btn.btn-default.pull-left {
+  margin: 0 !important;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.364;
+  white-space: normal;
+  padding: 10px 25px;
+  background-color: #50afef !important;
+  color: #fff !important;
+  float: none !important;
+  border: none !important;
+}
+
+.login-container .login-box .login-body .btn.btn-default.pull-left,
+.login-container .login-box .registration-body .btn.btn-default.pull-left,
+.login-container .registration-box .login-body .btn.btn-default.pull-left,
+.login-container .registration-box .registration-body .btn.btn-default.pull-left,
+.registration-container .login-box .login-body .btn.btn-default.pull-left,
+.registration-container .login-box .registration-body .btn.btn-default.pull-left,
+.registration-container .registration-box .login-body .btn.btn-default.pull-left,
+.registration-container .registration-box .registration-body .btn.btn-default.pull-left {
+  margin-top: 20px !important;
+}
+
+.login-container .login-box .login-body .btn.btn-link.btn-block,
+.login-container .login-box .registration-body .btn.btn-link.btn-block,
+.login-container .registration-box .login-body .btn.btn-link.btn-block,
+.login-container .registration-box .registration-body .btn.btn-link.btn-block,
+.registration-container .login-box .login-body .btn.btn-link.btn-block,
+.registration-container .login-box .registration-body .btn.btn-link.btn-block,
+.registration-container .registration-box .login-body .btn.btn-link.btn-block,
+.registration-container .registration-box .registration-body .btn.btn-link.btn-block {
+  margin-top: 20px;
+  font-family: Rubik, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.364;
+  letter-spacing: 0.2px;
+  color: #50afef !important;
+}
+
+.login-container .login-box .login-body .form-control.promocode::-webkit-input-placeholder,
+.login-container .login-box .registration-body .form-control.promocode::-webkit-input-placeholder,
+.login-container .registration-box .login-body .form-control.promocode::-webkit-input-placeholder,
+.login-container .registration-box .registration-body .form-control.promocode::-webkit-input-placeholder,
+.registration-container .login-box .login-body .form-control.promocode::-webkit-input-placeholder,
+.registration-container .login-box .registration-body .form-control.promocode::-webkit-input-placeholder,
+.registration-container .registration-box .login-body .form-control.promocode::-webkit-input-placeholder,
+.registration-container .registration-box .registration-body .form-control.promocode::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.login-container .login-box .login-body label.error,
+.login-container .login-box .registration-body label.error,
+.login-container .registration-box .login-body label.error,
+.login-container .registration-box .registration-body label.error,
+.registration-container .login-box .login-body label.error,
+.registration-container .login-box .registration-body label.error,
+.registration-container .registration-box .login-body label.error,
+.registration-container .registration-box .registration-body label.error {
+  position: relative;
+  top: -37.5px;
+}
+
+.login-container .login-box .login-body .btn-register,
+.login-container .login-box .registration-body .btn-register,
+.login-container .registration-box .login-body .btn-register,
+.login-container .registration-box .registration-body .btn-register,
+.registration-container .login-box .login-body .btn-register,
+.registration-container .login-box .registration-body .btn-register,
+.registration-container .registration-box .login-body .btn-register,
+.registration-container .registration-box .registration-body .btn-register {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.364;
+  white-space: normal;
+}
+
+.login-container .login-box .login-body .registration-subtitle,
+.login-container .login-box .login-body h4,
+.login-container .login-box .registration-body .registration-subtitle,
+.login-container .login-box .registration-body h4,
+.login-container .registration-box .login-body .registration-subtitle,
+.login-container .registration-box .login-body h4,
+.login-container .registration-box .registration-body .registration-subtitle,
+.login-container .registration-box .registration-body h4,
+.registration-container .login-box .login-body .registration-subtitle,
+.registration-container .login-box .login-body h4,
+.registration-container .login-box .registration-body .registration-subtitle,
+.registration-container .login-box .registration-body h4,
+.registration-container .registration-box .login-body .registration-subtitle,
+.registration-container .registration-box .login-body h4,
+.registration-container .registration-box .registration-body .registration-subtitle,
+.registration-container .registration-box .registration-body h4 {
+  font-family: Rubik, Helvetica Neue, Arial, sans-serif;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+  color: #afb9c5 !important;
+  text-transform: lowercase !important;
+}
+
+.login-container .login-box .login-body .login-title,
+.login-container .login-box .login-body .registration-title,
+.login-container .login-box .registration-body .login-title,
+.login-container .login-box .registration-body .registration-title,
+.login-container .registration-box .login-body .login-title,
+.login-container .registration-box .login-body .registration-title,
+.login-container .registration-box .registration-body .login-title,
+.login-container .registration-box .registration-body .registration-title,
+.registration-container .login-box .login-body .login-title,
+.registration-container .login-box .login-body .registration-title,
+.registration-container .login-box .registration-body .login-title,
+.registration-container .login-box .registration-body .registration-title,
+.registration-container .registration-box .login-body .login-title,
+.registration-container .registration-box .login-body .registration-title,
+.registration-container .registration-box .registration-body .login-title,
+.registration-container .registration-box .registration-body .registration-title {
+  margin-bottom: 37.5px;
+  font-family: Rubik, Helvetica Neue, Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: #fff !important;
+  font-weight: normal !important;
+}
+
+.login-container .login-box .login-body .login-title strong,
+.login-container .login-box .login-body .registration-title strong,
+.login-container .login-box .registration-body .login-title strong,
+.login-container .login-box .registration-body .registration-title strong,
+.login-container .registration-box .login-body .login-title strong,
+.login-container .registration-box .login-body .registration-title strong,
+.login-container .registration-box .registration-body .login-title strong,
+.login-container .registration-box .registration-body .registration-title strong,
+.registration-container .login-box .login-body .login-title strong,
+.registration-container .login-box .login-body .registration-title strong,
+.registration-container .login-box .registration-body .login-title strong,
+.registration-container .login-box .registration-body .registration-title strong,
+.registration-container .registration-box .login-body .login-title strong,
+.registration-container .registration-box .login-body .registration-title strong,
+.registration-container .registration-box .registration-body .login-title strong,
+.registration-container .registration-box .registration-body .registration-title strong {
+  font-weight: normal !important;
+}
+
+.login-container .login-box .login-body .login-title .not-registered,
+.login-container .login-box .login-body .registration-title .not-registered,
+.login-container .login-box .registration-body .login-title .not-registered,
+.login-container .login-box .registration-body .registration-title .not-registered,
+.login-container .registration-box .login-body .login-title .not-registered,
+.login-container .registration-box .login-body .registration-title .not-registered,
+.login-container .registration-box .registration-body .login-title .not-registered,
+.login-container .registration-box .registration-body .registration-title .not-registered,
+.registration-container .login-box .login-body .login-title .not-registered,
+.registration-container .login-box .login-body .registration-title .not-registered,
+.registration-container .login-box .registration-body .login-title .not-registered,
+.registration-container .login-box .registration-body .registration-title .not-registered,
+.registration-container .registration-box .login-body .login-title .not-registered,
+.registration-container .registration-box .login-body .registration-title .not-registered,
+.registration-container .registration-box .registration-body .login-title .not-registered,
+.registration-container .registration-box .registration-body .registration-title .not-registered {
+  margin-top: 37.5px !important;
+  font-family: Rubik, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.364;
+  letter-spacing: 0.2px;
+  color: #fff !important;
+}
+
+.login-container .login-box .login-body .form-group .col-md-6,
+.login-container .login-box .registration-body .form-group .col-md-6,
+.login-container .registration-box .login-body .form-group .col-md-6,
+.login-container .registration-box .registration-body .form-group .col-md-6,
+.registration-container .login-box .login-body .form-group .col-md-6,
+.registration-container .login-box .registration-body .form-group .col-md-6,
+.registration-container .registration-box .login-body .form-group .col-md-6,
+.registration-container .registration-box .registration-body .form-group .col-md-6 {
+  width: 100%;
+}
+
+.login-container .login-box .login-body .form-group .col-md-6 .btn.btn-login.btn-block.submit,
+.login-container .login-box .registration-body .form-group .col-md-6 .btn.btn-login.btn-block.submit,
+.login-container .registration-box .login-body .form-group .col-md-6 .btn.btn-login.btn-block.submit,
+.login-container .registration-box .registration-body .form-group .col-md-6 .btn.btn-login.btn-block.submit,
+.registration-container .login-box .login-body .form-group .col-md-6 .btn.btn-login.btn-block.submit,
+.registration-container .login-box .registration-body .form-group .col-md-6 .btn.btn-login.btn-block.submit,
+.registration-container .registration-box .login-body .form-group .col-md-6 .btn.btn-login.btn-block.submit,
+.registration-container .registration-box .registration-body .form-group .col-md-6 .btn.btn-login.btn-block.submit {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.364;
+  white-space: normal;
+  padding: 10px 25px;
+  background-color: #50afef !important;
+  color: #fff !important;
+}
+
+.login-container .login-box .login-body .form-group .col-md-6 .btn.btn-link.btn-block,
+.login-container .login-box .registration-body .form-group .col-md-6 .btn.btn-link.btn-block,
+.login-container .registration-box .login-body .form-group .col-md-6 .btn.btn-link.btn-block,
+.login-container .registration-box .registration-body .form-group .col-md-6 .btn.btn-link.btn-block,
+.registration-container .login-box .login-body .form-group .col-md-6 .btn.btn-link.btn-block,
+.registration-container .login-box .registration-body .form-group .col-md-6 .btn.btn-link.btn-block,
+.registration-container .registration-box .login-body .form-group .col-md-6 .btn.btn-link.btn-block,
+.registration-container .registration-box .registration-body .form-group .col-md-6 .btn.btn-link.btn-block {
+  margin-top: 20px;
+  font-family: Rubik, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.364;
+  letter-spacing: 0.2px;
+  color: #50afef !important;
+}
+
+.login-container .login-box .login-body .form-group input,
+.login-container .login-box .login-body .form-group select,
+.login-container .login-box .registration-body .form-group input,
+.login-container .login-box .registration-body .form-group select,
+.login-container .registration-box .login-body .form-group input,
+.login-container .registration-box .login-body .form-group select,
+.login-container .registration-box .registration-body .form-group input,
+.login-container .registration-box .registration-body .form-group select,
+.registration-container .login-box .login-body .form-group input,
+.registration-container .login-box .login-body .form-group select,
+.registration-container .login-box .registration-body .form-group input,
+.registration-container .login-box .registration-body .form-group select,
+.registration-container .registration-box .login-body .form-group input,
+.registration-container .registration-box .login-body .form-group select,
+.registration-container .registration-box .registration-body .form-group input,
+.registration-container .registration-box .registration-body .form-group select {
+  padding-bottom: 6px !important;
+  margin-bottom: 37.5px;
+  font-family: Rubik, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.364;
+  letter-spacing: 0.2px;
+  background-color: transparent !important;
+  color: #fff !important;
+  border-bottom: 1px solid #fff !important;
+}
+
+.login-container .login-box .login-body .form-group input:focus,
+.login-container .login-box .login-body .form-group select:focus,
+.login-container .login-box .registration-body .form-group input:focus,
+.login-container .login-box .registration-body .form-group select:focus,
+.login-container .registration-box .login-body .form-group input:focus,
+.login-container .registration-box .login-body .form-group select:focus,
+.login-container .registration-box .registration-body .form-group input:focus,
+.login-container .registration-box .registration-body .form-group select:focus,
+.registration-container .login-box .login-body .form-group input:focus,
+.registration-container .login-box .login-body .form-group select:focus,
+.registration-container .login-box .registration-body .form-group input:focus,
+.registration-container .login-box .registration-body .form-group select:focus,
+.registration-container .registration-box .login-body .form-group input:focus,
+.registration-container .registration-box .login-body .form-group select:focus,
+.registration-container .registration-box .registration-body .form-group input:focus,
+.registration-container .registration-box .registration-body .form-group select:focus {
+  border-bottom: 1px solid #50afef !important;
+}
+
+.login-container .login-box .login-body .form-group input::-webkit-input-placeholder,
+.login-container .login-box .login-body .form-group select::-webkit-input-placeholder,
+.login-container .login-box .registration-body .form-group input::-webkit-input-placeholder,
+.login-container .login-box .registration-body .form-group select::-webkit-input-placeholder,
+.login-container .registration-box .login-body .form-group input::-webkit-input-placeholder,
+.login-container .registration-box .login-body .form-group select::-webkit-input-placeholder,
+.login-container .registration-box .registration-body .form-group input::-webkit-input-placeholder,
+.login-container .registration-box .registration-body .form-group select::-webkit-input-placeholder,
+.registration-container .login-box .login-body .form-group input::-webkit-input-placeholder,
+.registration-container .login-box .login-body .form-group select::-webkit-input-placeholder,
+.registration-container .login-box .registration-body .form-group input::-webkit-input-placeholder,
+.registration-container .login-box .registration-body .form-group select::-webkit-input-placeholder,
+.registration-container .registration-box .login-body .form-group input::-webkit-input-placeholder,
+.registration-container .registration-box .login-body .form-group select::-webkit-input-placeholder,
+.registration-container .registration-box .registration-body .form-group input::-webkit-input-placeholder,
+.registration-container .registration-box .registration-body .form-group select::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.login-container .login-box .login-body .form-group input:-ms-input-placeholder,
+.login-container .login-box .login-body .form-group select:-ms-input-placeholder,
+.login-container .login-box .registration-body .form-group input:-ms-input-placeholder,
+.login-container .login-box .registration-body .form-group select:-ms-input-placeholder,
+.login-container .registration-box .login-body .form-group input:-ms-input-placeholder,
+.login-container .registration-box .login-body .form-group select:-ms-input-placeholder,
+.login-container .registration-box .registration-body .form-group input:-ms-input-placeholder,
+.login-container .registration-box .registration-body .form-group select:-ms-input-placeholder,
+.registration-container .login-box .login-body .form-group input:-ms-input-placeholder,
+.registration-container .login-box .login-body .form-group select:-ms-input-placeholder,
+.registration-container .login-box .registration-body .form-group input:-ms-input-placeholder,
+.registration-container .login-box .registration-body .form-group select:-ms-input-placeholder,
+.registration-container .registration-box .login-body .form-group input:-ms-input-placeholder,
+.registration-container .registration-box .login-body .form-group select:-ms-input-placeholder,
+.registration-container .registration-box .registration-body .form-group input:-ms-input-placeholder,
+.registration-container .registration-box .registration-body .form-group select:-ms-input-placeholder {
+  color: #fff !important;
+}
+
+.login-container .login-box .login-body .form-group input::-ms-input-placeholder,
+.login-container .login-box .login-body .form-group select::-ms-input-placeholder,
+.login-container .login-box .registration-body .form-group input::-ms-input-placeholder,
+.login-container .login-box .registration-body .form-group select::-ms-input-placeholder,
+.login-container .registration-box .login-body .form-group input::-ms-input-placeholder,
+.login-container .registration-box .login-body .form-group select::-ms-input-placeholder,
+.login-container .registration-box .registration-body .form-group input::-ms-input-placeholder,
+.login-container .registration-box .registration-body .form-group select::-ms-input-placeholder,
+.registration-container .login-box .login-body .form-group input::-ms-input-placeholder,
+.registration-container .login-box .login-body .form-group select::-ms-input-placeholder,
+.registration-container .login-box .registration-body .form-group input::-ms-input-placeholder,
+.registration-container .login-box .registration-body .form-group select::-ms-input-placeholder,
+.registration-container .registration-box .login-body .form-group input::-ms-input-placeholder,
+.registration-container .registration-box .login-body .form-group select::-ms-input-placeholder,
+.registration-container .registration-box .registration-body .form-group input::-ms-input-placeholder,
+.registration-container .registration-box .registration-body .form-group select::-ms-input-placeholder {
+  color: #fff !important;
+}
+
+.login-container .login-box .login-body .form-group input::placeholder,
+.login-container .login-box .login-body .form-group select::placeholder,
+.login-container .login-box .registration-body .form-group input::placeholder,
+.login-container .login-box .registration-body .form-group select::placeholder,
+.login-container .registration-box .login-body .form-group input::placeholder,
+.login-container .registration-box .login-body .form-group select::placeholder,
+.login-container .registration-box .registration-body .form-group input::placeholder,
+.login-container .registration-box .registration-body .form-group select::placeholder,
+.registration-container .login-box .login-body .form-group input::placeholder,
+.registration-container .login-box .login-body .form-group select::placeholder,
+.registration-container .login-box .registration-body .form-group input::placeholder,
+.registration-container .login-box .registration-body .form-group select::placeholder,
+.registration-container .registration-box .login-body .form-group input::placeholder,
+.registration-container .registration-box .login-body .form-group select::placeholder,
+.registration-container .registration-box .registration-body .form-group input::placeholder,
+.registration-container .registration-box .registration-body .form-group select::placeholder {
+  color: #fff !important;
+}
+
+.login-container .login-box .login-body .form-group input option,
+.login-container .login-box .login-body .form-group select option,
+.login-container .login-box .registration-body .form-group input option,
+.login-container .login-box .registration-body .form-group select option,
+.login-container .registration-box .login-body .form-group input option,
+.login-container .registration-box .login-body .form-group select option,
+.login-container .registration-box .registration-body .form-group input option,
+.login-container .registration-box .registration-body .form-group select option,
+.registration-container .login-box .login-body .form-group input option,
+.registration-container .login-box .login-body .form-group select option,
+.registration-container .login-box .registration-body .form-group input option,
+.registration-container .login-box .registration-body .form-group select option,
+.registration-container .registration-box .login-body .form-group input option,
+.registration-container .registration-box .login-body .form-group select option,
+.registration-container .registration-box .registration-body .form-group input option,
+.registration-container .registration-box .registration-body .form-group select option {
+  color: #000;
+}
+
+.login-container .login-box .login-body .form-group .small-select::before,
+.login-container .login-box .registration-body .form-group .small-select::before,
+.login-container .registration-box .login-body .form-group .small-select::before,
+.login-container .registration-box .registration-body .form-group .small-select::before,
+.registration-container .login-box .login-body .form-group .small-select::before,
+.registration-container .login-box .registration-body .form-group .small-select::before,
+.registration-container .registration-box .login-body .form-group .small-select::before,
+.registration-container .registration-box .registration-body .form-group .small-select::before {
+  top: -3px !important;
+  right: 4px !important;
+}
+
+.login-container .login-box .login-body .form-group .select::before,
+.login-container .login-box .registration-body .form-group .select::before,
+.login-container .registration-box .login-body .form-group .select::before,
+.login-container .registration-box .registration-body .form-group .select::before,
+.registration-container .login-box .login-body .form-group .select::before,
+.registration-container .login-box .registration-body .form-group .select::before,
+.registration-container .registration-box .login-body .form-group .select::before,
+.registration-container .registration-box .registration-body .form-group .select::before {
+  top: -3px !important;
+  right: 18px !important;
+}
+
+form[action="https://portal.aagmarkets.com/api/upgrade"] h4 {
+  color: #fff;
+}
+
+form[action="https://portal.aagmarkets.com/api/upgrade"] .form-group {
+  margin: 0 -15px 15px -15px;
+}
+
+form[action="https://portal.aagmarkets.com/api/upgrade"] .btn.btn-default.pull-right,
+form[action="https://portal.aagmarkets.com/api/upgrade"] .btn.btn-default.pull-left,
+form[action="https://portal.aagmarkets.com/api/upgrade"] .btn.btn-register.btn-block.submit {
+  border: none !important;
+  background-color: #50afef !important;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
+  padding: 10px 25px;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.364 !important;
+  white-space: normal !important;
+  border-radius: 5px !important;
+  color: #ffffff !important;
+}
+
+form[action="https://portal.aagmarkets.com/api/upgrade"] .btn.btn-default.pull-left {
+  background-color: transparent !important;
+  color: #50afef !important;
+}
+
+form[action="https://portal.aagmarkets.com/api/upgrade"] .col-md-12.select::before {
+  top: 0 !important;
+}
+
+form[action="https://portal.aagmarkets.com/api/upgrade"] .col-md-12 p {
+  color: #fff !important;
+}
+
+#step-4 h4 a {
+  color: #afb9c5 !important;
+}
+/*# sourceMappingURL=style.css.map */
+</style>
+
